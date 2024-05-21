@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Juego de Memoria</title>
+</head>
+<body><section class="m">
+    <h2 class="titulo">Juegos de Memoria</h2>
+    <h3 id="ab"class="menu"> <a href="#juegonumeros">Numeros</a></h3>
+    <h3 id="aa"class="menu"><a href="#juegoimagenes">Imagenes</a></h3>
+    </section>
+    
+    <main>
+        <section id="juegonumeros" class="section1">
+            <h1>Juego de Memoria con numeros</h1>
+                <table>
+                    <tr>
+                        <td><button id="0" onclick="uncovernro(0)"></button></td>
+                        <td><button id="1" onclick="uncovernro(1)"></button></td>
+                        <td><button id="2" onclick="uncovernro(2)"></button></td>
+                        <td><button id="3" onclick="uncovernro(3)"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="4" onclick="uncovernro(4)"></button></td>
+                        <td><button id="5" onclick="uncovernro(5)"></button></td>
+                        <td><button id="6" onclick="uncovernro(6)"></button></td>
+                        <td><button id="7" onclick="uncovernro(7)"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="8" onclick="uncovernro(8)"></button></td>
+                        <td><button id="9" onclick="uncovernro(9)"></button></td>
+                        <td><button id="10"onclick="uncovernro(10)"></button></td>
+                        <td><button id="11"onclick="uncovernro(11)"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="12" onclick="uncovernro(12)"></button></td>
+                        <td><button id="13" onclick="uncovernro(13)"></button></td>
+                        <td><button id="14" onclick="uncovernro(14)"></button></td>
+                        <td><button id="15" onclick="uncovernro(15)"></button></td>
+                    </tr>
+
+                </table>
+        </section>
+        
+        <section class="section2">
+    <div>
+        <h3 id="timeleft" class="Estadisticas">Tiempo: 30 segundos</h3>
+        <h2 id="success1" class="Estadisticas">Aciertos:0</h2>
+        <h2 id="motion1" class="Estadisticas">Movimientos:0</h2>
+    </div>
+</section>
+</main>
+<td><button id="reinicio" class="bto" onclick="reiniciar()">Volver a empezar!</button></td>
+<main>
+    <section id=juegoimagenes class="section11">
+        <h1>Juego de Memoria con imagenes</h1>
+            <table>
+                <tr>
+                    <td><button id="16" onclick="uncoverimg(0)"></button></td>
+                    <td><button id="17" onclick="uncoverimg(1)"></button></td>
+                    <td><button id="18" onclick="uncoverimg(2)"></button></td>
+                    <td><button id="19" onclick="uncoverimg(3)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="20" onclick="uncoverimg(4)"></button></td>
+                    <td><button id="21" onclick="uncoverimg(5)"></button></td>
+                    <td><button id="22" onclick="uncoverimg(6)"></button></td>
+                    <td><button id="23" onclick="uncoverimg(7)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="24" onclick="uncoverimg(8)"></button></td>
+                    <td><button id="25" onclick="uncoverimg(9)"></button></td>
+                    <td><button id="26" onclick="uncoverimg(10)"></button></td>
+                    <td><button id="27" onclick="uncoverimg(11)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="28" onclick="uncoverimg(12)"></button></td>
+                    <td><button id="29" onclick="uncoverimg(13)"></button></td>
+                    <td><button id="30" onclick="uncoverimg(14)"></button></td>
+                    <td><button id="31" onclick="uncoverimg(15)"></button></td>
+                </tr>
+
+            </table>
+    </section>
+    <section class="section22">
+<div>
+    <h3 id="timeleft2" class="Estadisticas2">Tiempo: 30 segundos</h3>
+    <h2 id="success2" class="Estadisticas2">Aciertos:0</h2>
+    <h2 id="motion2" class="Estadisticas2">Movimientos:0</h2>
+</div>
+</section>
+</main>
+<td><button id="reinicio2" class="bto2"onclick="reiniciar2()">Volver a empezar!</button></td>
+    <footer><p>Juego creado por <a href="">Juan Santos</a></p>
+    </footer>
+
+  <script src="main.js"></script>
+    
+ </body>
+</html>
