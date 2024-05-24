@@ -193,6 +193,7 @@ function reiniciar(){
     showMotion.innerHTML = `Movimientos: 0`;
   
     
+    numbers = numbers.sort(()=>{return Math.random()-0.5});
   
     // Restablecer el contenido de las cartas del primer juego
     for (let i = 0; i <= 15; i++) {
@@ -222,8 +223,8 @@ function reiniciar(){
     showTimer2.innerHTML = `Tiempo: ${initialTimerI} segundos`;
     showSuccess2.innerHTML = `Aciertos: 0`;
     showMotion2.innerHTML = `Movimientos: 0`;
-  
-   
+
+    numbersI = numbersI.sort(()=>{return Math.random()-0.5});
   
     // Restablecer el contenido de las cartas del segundo juego
     for (let i = 16; i <= 31; i++) {
