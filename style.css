@@ -1,34 +1,52 @@
 
 
 body{
-    background: rgb(2,0,36);
+    
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,114,121,1) 35%, rgba(0,212,255,1) 100%);
     font-family:poppins;
     color:white;
+    margin: 0;
+    padding: 0;
 } 
 
 main{
-    max-width: 100%; 
     width: 730px;
     margin: 30px auto;
     display: flex;
+
     align-items: center;
 }
-@media (max-width:770px){
-    main {
-        flex-direction: column;
-        width:90% ;
+
+
+@media (max-width: 600px) {
+    body{
+     background-size: cover;
     }
+   main{
+    flex-direction: column;
+}
+.section1, .section11, .section22{
+    flex:none;
+    width: auto;
+}
+}
+@media(max-width:480px){
+    button{
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+    button{
+        align-items: center;
+        display: flex;
+    }
+}
 
 .section1{
     background-color:rgba(2,0,36,1);
     padding: 0 10px 10px 10px;
     border-radius: 10px;
-    
-}
 
 }
-
 h1{
     text-align: center;
 }
@@ -40,6 +58,8 @@ button{
     color: black;
     font-weight: bold;
     border-radius: 10px;
+    display: flex;
+    margin: 10px 0;
 }
 
 button:hover{
@@ -54,8 +74,8 @@ button:hover{
     width: 250px;
     height: 400px;
     padding: 0 20px;
-
 }
+
 
 .Estadisticas{
     border: 1px solid white;
@@ -69,6 +89,10 @@ button:hover{
     background-color:  rgba(2,0,36,1);
     padding: 0px 10px 10px 10px;
     border-radius: 10px;
+   
+    
+   
+    
 }
 h1{
     text-align: center;
@@ -111,7 +135,7 @@ footer{
 }
 
 a{
-    color:whitesmoke;
+    color:rgb(27, 57, 94);
     text-decoration:none;
 }
 img{ 
@@ -158,23 +182,3 @@ button.bto2{
    
 }
 
-.m #ab{
-    margin-left: 900px;
-    margin-right: 30px;
-}
-@media (max-width:770px){
-   .m #ab{
-    margin: 0;
-    display: inline-block;
-    margin-left: 25px;
-   }
-}
-
-@media (max-width:770px){
-    .m #aa{
-     margin: 0;
-     display: inline-block;
-     margin-left: 25px;
-    }
- }
- 
