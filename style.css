@@ -3,14 +3,13 @@ html, body{
     margin: 0;
     padding: 0;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,114,121,1) 35%, rgba(0,212,255,1) 100%);
-    background-size: cover;
     background-attachment: fixed;
     font-family:poppins;
     color:white;
 }
 
 main{
-    max-width: 730%;
+    max-width: 730px;
     margin: 30px auto;
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +30,7 @@ main{
        width: auto;
     }
 }
-@media(max-width:480px){
+@media(max-width:600px){
     button{
         padding: 15px;
         font-size: 0.8rem;
@@ -41,10 +40,7 @@ main{
         display: flex;
     }
 }
-@media(min-width:600px){
-#juegonumeros, #juegoimagenes{
-      margin-left: 450px;
-}}
+
 
 .section1{
     background-color:rgba(2,0,36,1);
@@ -134,8 +130,13 @@ button:hover{
     
 }
 
-footer{
-    text-align:center;
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+    
 }
 
 a{
@@ -154,7 +155,8 @@ button.bto{
     border-radius: 10px;
     background: rgba(2,0,36,1);
     width: 365px;
-    margin: 30px auto;
+    margin: 20px auto;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,52 +169,82 @@ button.bto2{
     font-weight:bold;
     border-radius: 10px;
     background: rgba(2,0,36,1);
-    width: 365px;
+    width: 365px; 
     margin: 30px auto;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 button:hover{
     cursor:pointer;
     
 }
-
-.m {
-    margin-left: 30px;
-    
+@media (max-width:600px){
+    .bto2, .bto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .titulo {
+    margin: 0;
+    margin-bottom: 30px;
     display: inline-block;
 }
+.m{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+ .ref{
+    display: flex;
+    gap: 20px;
+ }
+ .menu{
+    margin: 0;
+ }
 
-.menu {
+#ab, #aa{
     display: inline-block;
-   
-}
-
-#ab{
-    display: inline;
-    margin-left: 900px ;
-}
-
-#aa{
-    display: inline;
     margin-left:  20px ;
+    margin-bottom: 30px;
 }
+#foo{
+
+}
+
 
 @media (max-width:600px){
+    .m{
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        display: flex;
+    }
     #ab{
-        display: inline;
-        margin-left: 130px ;
+        display:inline-block;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .ref{
+       margin-top: 10px;
+       justify-content: center;
+       width: 100%;
     }
     
-    #aa{
-        display: inline;
-        margin-left:  20px ;
-    }
 }
+
+
+
+
 
 

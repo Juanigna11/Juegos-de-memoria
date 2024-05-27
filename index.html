@@ -10,13 +10,16 @@
 
     <title>Juego de Memoria</title>
 </head>
-<body><section class="m">
-    <h2 class="titulo">Juegos de Memoria</h2>
-    <h3 id="ab"class="menu1"> <a href="#juegonumeros">Numeros</a></h3>
-    <h3 id="aa"class="menu2"><a href="#juegoimagenes">Imagenes</a></h3>
-    </section>
+<body>
     
     <main>
+        <section class="m">
+        <h2 class="titulo">Juegos de Memoria</h2>
+        <div class="ref">
+        <h3 id="ab"class="menu"> <a href="#juegonumeros">Numeros</a></h3>
+        <h3 id="aa"class="menu"><a href="#juegoimagenes">Imagenes</a></h3>
+      </div>   
+    </section>
         <section id="juegonumeros" class="section1">
             <h1>Juego de Memoria con numeros</h1>
                 <table>
@@ -55,8 +58,8 @@
         <h2 id="motion1" class="Estadisticas">Movimientos:0</h2>
     </div>
 </section>
-</main>
 <td><button id="reinicio" class="bto" onclick="reiniciar()">Volver a empezar!</button></td>
+</main>
 <main>
     <section id="juegoimagenes" class="section11">
         <h1>Juego de Memoria con imagenes</h1>
@@ -95,10 +98,10 @@
     <h2 id="motion2" class="Estadisticas2">Movimientos:0</h2>
 </div>
 </section>
-</main>
 <td><button id="reinicio2" class="bto2"onclick="reiniciar2()">Volver a empezar!</button></td>
-    <footer><p>Juego creado por <a href="">Juan Santos</a></p>
-    </footer>
+<footer><p id="foo">Juego creado por <a href="">Juan Santos</a></p>
+</footer>
+</main>
 
   <script src="main.js"></script>
     
