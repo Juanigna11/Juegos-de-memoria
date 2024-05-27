@@ -30,6 +30,12 @@ let showMotion2 = document.getElementById(`motion2`);
 let showSuccess2 = document.getElementById(`success2`);
 let showTimer2= document.getElementById(`timeleft2`);
 
+let winAudio = new Audio('./sound/win.wav');
+let loseAudio = new Audio('./sound/lose.wav');
+let clickAudio = new Audio('./sound/click.wav');
+let rightAudio = new Audio('./sound/right.wav');
+let wrongAudio = new Audio('./sound/wrong.wav');
+
 let numbers = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8];
 numbers = numbers.sort(()=>{return Math.random()-0.5});
 
@@ -39,7 +45,8 @@ function countTime(){
     showTimer.innerHTML = `Tiempo: ${timer1} segundos`;
     if (timer1 == 0){
       clearInterval(regressiveTime);
-      blockCards();
+      blockCards(numbers);
+      loseAudio.play();
   }
  },1000);
 }
@@ -64,6 +71,7 @@ function uncovernro(id){
       //Mostrar el primer numero
       card1 = document.getElementById(id);
       firstResult = numbers[id];
+      clickAudio.play();
       card1.innerHTML = firstResult;
       card1.disabled = true;
     
@@ -84,8 +92,9 @@ function uncovernro(id){
       uncoveredCards = 0;
       success++;
       showSuccess.innerHTML = `Aciertos: ${success}`;
-
+      rightAudio.play();
       if (success == 8){
+        winAudio.play();
         clearInterval(regressiveTime);
         showSuccess.innerHTML = `Aciertos: ${success}`;
         showMotion.innerHTML = `Movimientos: ${motion}`;
@@ -93,6 +102,7 @@ function uncovernro(id){
       }
 
      }else{
+      wrongAudio.play();
       setTimeout(()=>{
         card1.innerHTML = " ";
         card2.innerHTML = " ";
@@ -115,7 +125,8 @@ function countTimeI(){
     showTimer2.innerHTML = `Tiempo: ${timer1I} segundos`;
     if (timer1I == 0){
       clearInterval(regressiveTimeI);
-      blockCardsI();
+      blockCardsI(numbersI);
+      loseAudio.play();
   }
  },1000);
 }
@@ -140,6 +151,7 @@ function uncoverimg(id){
     // Mostrar la primera imagen
     card1I = document.getElementById(id+16);
     firstResultI = numbersI[id];
+    clickAudio.play();
     card1I.innerHTML = `<img src="./images/${firstResultI}.png" alt="">`; 
     card1I.disabled = true;
   } else if(uncoveredCardsI == 2){
@@ -153,6 +165,7 @@ function uncoverimg(id){
     showMotion2.innerHTML = `Movimientos: ${motionI}`;
 
     if(firstResultI == secondResultI){
+      rightAudio.play();
       uncoveredCardsI = 0;
       successI++;
       showSuccess2.innerHTML = `Aciertos: ${successI}`;
@@ -164,6 +177,7 @@ function uncoverimg(id){
         showTimer2.innerHTML = `¡Perfecto! Solo tardaste ${initialTimerI - timer1I} segundos`;
       }
     } else {
+      wrongAudio.play();
       setTimeout(()=>{
         card1I.innerHTML = "";
         card2I.innerHTML = "";
