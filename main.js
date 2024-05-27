@@ -89,7 +89,7 @@ function uncovernro(id){
         clearInterval(regressiveTime);
         showSuccess.innerHTML = `Aciertos: ${success}`;
         showMotion.innerHTML = `Movimientos: ${motion}`;
-        showTimer.innerHTML = ` ¡Perfecto!, S olo tardaste ${initialTimer - timer1}segundos`;
+        showTimer.innerHTML = ` ¡Perfecto!, Solo tardaste ${initialTimer - timer1}segundos`;
       }
 
      }else{

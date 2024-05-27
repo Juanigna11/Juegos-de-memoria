@@ -14,6 +14,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    
 }
 
 @media (max-width: 600px) {
@@ -24,10 +25,13 @@ main{
     main{
        flex-direction: column;
        align-items: center;
+       
+       
     }
     .section1, .section11, .section22{
        flex:none;
        width: auto;
+      
     }
 }
 @media(max-width:600px){
@@ -133,10 +137,7 @@ button:hover{
 .footer{
     display: flex;
     justify-content: center;
-    align-items: center;
- 
-
-    
+    align-items: center;    
 }
 
 a{
@@ -182,6 +183,7 @@ button:hover{
     cursor:pointer;
     
 }
+
 @media (max-width:600px){
     .bto2, .bto {
         display: flex;
@@ -195,6 +197,7 @@ button:hover{
     margin-bottom: 30px;
     display: inline-block;
 }
+
 .m{
     display: flex;
     align-items: center;
@@ -205,23 +208,21 @@ button:hover{
     box-sizing: border-box;
     overflow: hidden;
 }
+
  .ref{
     display: flex;
     gap: 20px;
- }
+}
+
  .menu{
     margin: 0;
- }
+}
 
 #ab, #aa{
     display: inline-block;
     margin-left:  20px ;
     margin-bottom: 30px;
 }
-#foo{
-
-}
-
 
 @media (max-width:600px){
     .m{
@@ -240,7 +241,6 @@ button:hover{
        justify-content: center;
        width: 100%;
     }
-    
 }
 
 
